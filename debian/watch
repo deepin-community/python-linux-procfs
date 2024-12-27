@@ -1,0 +1,2 @@
+version=4
+https://git.kernel.org/pub/scm/libs/python/python-linux-procfs/python-linux-procfs.git /pub/scm/libs/python/python-linux-procfs/python-linux-procfs\.git/snapshot/python-linux-procfs-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

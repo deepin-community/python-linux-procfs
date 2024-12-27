@@ -1,14 +1,25 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: python-linux-procfs
+Upstream-Contact: Jiri Kastner <jkastner@redhat.com>
+Source: https://git.kernel.org/pub/scm/libs/python/python-linux-procfs/python-linux-procfs.git/
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
+Copyright: 2007-2015 Red Hat Inc. <jkastner@redhat.com>
+License: GPL-2
+Comment: Content was authored by Arnaldo Carvalho de Melo <acme@redhat.com> in
+ 2007. Maintainership transferred to Jiri Kastner <jkastner@redhat.com> in
+ 2015. Jiri Kasterner (as of 2018) is the point of contact for all upstream
+ matters related to this library. The dates of this copyright were deduced from
+ procfs/procfs.py, a primary file in this library.
+
+Files: debian/*
+Copyright: 2018-2020 Stewart Ferguson <stew@ferg.aero>
+License: GPL-2
+
+License: GPL-2
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+ the Free Software Foundation; version 2 of the License
  .
  This package is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
