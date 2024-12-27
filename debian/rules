@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
 
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+export PYBUILD_NAME=linux-procfs
+
+override_dh_auto_build:
+	dh_auto_build
+	a2x -d manpage -f manpage debian/pflags.8.asciidoc
+
 %:
-	dh $@
+	dh $@ --buildsystem pybuild

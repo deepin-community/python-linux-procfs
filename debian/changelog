@@ -1,5 +1,96 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-linux-procfs (0.7.3-3) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Patch-out usage of python3-six. No clear way to contact upstream.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Alexandre Detiste <tchet@debian.org>  Mon, 11 Nov 2024 12:26:35 +0100
+
+python-linux-procfs (0.7.3-2) unstable; urgency=medium
+
+  * Team Upload
+  * Set DPT as Maintainer per new Team Policy
+  * Update Homepage
+
+ -- Alexandre Detiste <tchet@debian.org>  Thu, 22 Aug 2024 10:15:36 +0200
+
+python-linux-procfs (0.7.3-1) unstable; urgency=medium
+
+  * Team Upload
+  * New upstream version 0.7.3
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+  * Remove constraints unnecessary since buster (oldstable):
+    + python3-linux-procfs: Drop versioned constraint
+      on python-linux-procfs in Replaces & Breaks.
+
+ -- Alexandre Detiste <tchet@debian.org>  Sun, 14 Apr 2024 21:15:20 +0200
+
+python-linux-procfs (0.6.3-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+  [ Stewart Ferguson ]
+  * Imported Upstream version 0.6.3
+  * Removing upstream patch
+  * Bumping Standards-Version: 4.5.1
+
+ -- Stewart Ferguson <stew@ferg.aero>  Wed, 20 Jan 2021 14:38:46 +0100
+
+python-linux-procfs (0.6.2-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.6.2
+  * Adding upstream patch to fix failed utilist import
+  * Bump Standards-Version to 4.5.0
+  * Removing unused install override
+  * Moving man page from patch to d/
+  * Removing clean target from rules. Using debian/clean instead
+  * Bumping compat 13
+  * Adding Rules-Requires-Root
+  * Bumping copyright years
+  * Now using dh-sequence-python3 instead of --with python3
+
+ -- Stewart Ferguson <stew@ferg.aero>  Sat, 11 Jul 2020 11:59:58 +0200
+
+python-linux-procfs (0.6.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.0.
+
+  [ Stewart Ferguson ]
+  * Removing python2 binary package
+  * Replacing pflags3 with pflags and removing upodate-alternatives
+    + Breaks python-linux-procfs
+  * Removing unused .gitignore ignore rule
+  * Removing superfluous copyright block for COPYING file
+  * Improving package description
+  * Removing redundant debhelper build-dep
+
+ -- Stewart Ferguson <stew@ferg.aero>  Mon, 29 Jul 2019 21:44:23 +0200
+
+python-linux-procfs (0.6.1-1) unstable; urgency=medium
+
+  * Upstream release 0.6 -> 0.6.1
+  * debhelper compat 10 -> 12
+    + Build system python_distutils -> pybuild
+    + Removed old d/compat file
+  * Standards-Version 4.2.1 -> 4.3.0
+    + No changes required
+  * Removing .gitignore from debian source
+  * Correcting license from GPL-2+ to GPL-2
+  * Adding dh-python to Build-Depends
+
+ -- Stewart Ferguson <stew@ferg.aero>  Sun, 10 Feb 2019 21:32:12 +0100
+
+python-linux-procfs (0.6-1) unstable; urgency=medium
+
+  * Initial release (Closes: #912771)
+  * Python 2 version supplied to satisfy current state of tuna. Tuna's GUI-mode
+  *  still relies on python2.
+
+ -- Stewart Ferguson <stew@ferg.aero>  Sat, 03 Nov 2018 17:32:03 +0100
